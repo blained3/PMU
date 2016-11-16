@@ -14,5 +14,5 @@ angular.module('testApp')
         }
         $scope.goToStatusPage = function(){
         	$location.path("/status");
-        }
+        };
     });
