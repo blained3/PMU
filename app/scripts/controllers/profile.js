@@ -9,5 +9,7 @@
  */
 angular.module('testApp')
     .controller('ProfileCtrl', function ($scope, $location) {
-        
+        $scope.goToStatusPage = function(){
+        	$location.path("/status");
+        }
     });
