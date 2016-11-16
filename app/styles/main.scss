@@ -3,6 +3,20 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 @import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
 // endbower
 
+$mainColor: #64FFC5;
+$darkerColor: #7AA1B5;
+$lighterColor: #81DEFF;
+$buttonColor: #FF4847;
+$buttonBorder: #700301;
+
+.btn-success 
+{
+  background-color:$buttonColor;
+  border-color: $buttonBorder;
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+}
+
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -19,12 +33,12 @@ body {
 .footer {
   padding-left: 15px;
   padding-right: 15px;
-  background-color: dimgrey;
+  background-color: $darkerColor;
 }
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #ccc;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
