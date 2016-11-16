@@ -8,8 +8,9 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-    .controller('LoginCtrl', function ($scope, $location) {
+    .controller('LoginCtrl', function ($scope, $location, LoginService) {
         $scope.goBack = function(){
+            LoginService.logIn();
             $location.path('/profile');
         };
     });
