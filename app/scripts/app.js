@@ -52,5 +52,21 @@ angular
   .controller('TopCtrl', function ($location, $scope) {
     $scope.isActive = function(route) {
         return route === $location.path();
+    };
+  })
+  .service('LoginService', function(){
+    var loggedIn = false;
+
+    function isLoggedIn(){
+      return loggedIn;
     }
+
+    function logIn(){
+      loggedIn = true;
+    }
+
+    return {
+      isLoggedIn: isLoggedIn,
+      logIn: logIn
+    };
   });

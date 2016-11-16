@@ -8,6 +8,8 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-    .controller('ProfileCtrl', function ($scope, $location) {
-        
+    .controller('ProfileCtrl', function (LoginService, $location) {
+        if(!LoginService.isLoggedIn()){
+            $location.path('/login');
+        }
     });
