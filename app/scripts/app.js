@@ -29,6 +29,11 @@ angular
         controller: 'ProfileCtrl',
         controllerAs: 'profile'
       })
+      .when('/status', {
+        templateUrl: 'views/status.html',
+        controller: 'StatusCtrl',
+        controllerAs: 'status'
+      })
       .when('/', {
         templateUrl: 'views/main.html',
         controller: 'MainCtrl',
@@ -42,4 +47,9 @@ angular
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .controller('TopCtrl', function ($location, $scope) {
+    $scope.isActive = function(route) {
+        return route === $location.path();
+    }
   });
