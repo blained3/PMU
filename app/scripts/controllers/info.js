@@ -9,7 +9,7 @@
  */
 angular.module('testApp')
   .controller('InfoCtrl', function ($scope) {
-		var latLng = new google.maps.LatLng(45, -73);
+		var latLng = new google.maps.LatLng(40.23, -111.65);
 
 		var mapOptions = {
 			center: latLng,
