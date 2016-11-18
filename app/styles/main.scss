@@ -23,6 +23,10 @@ $buttonBorder: #700301;
 .ng-scope
 {
   background-color:$darkerColor; 
+  color: $mainColor;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
 }
 .navbar
 {
