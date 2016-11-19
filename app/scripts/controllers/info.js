@@ -8,17 +8,17 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('InfoCtrl', function ($scope, $firebaseArray, $location) {
+  .controller('InfoCtrl', function ($scope, $firebaseArray, $location, IDService) {
         var rootRef = firebase.database().ref();
         var userRef = rootRef.child('testUser');
         //Eventually, we will want to use whichever activue user it is
         
         // download the data into a local object
-        var rides = $firebaseArray(userRef);
+        $scope.rides = $firebaseArray(userRef);
 
         //Currently, this does not require a ride name, though I allow users to put one in.
         $scope.saveRide = function(start, end, time, payment, name) {
-            if (!(start && end && time && payment)) {
+            if (!(start && end && time && payment && name)) {
                 return;
             }
             else {
@@ -36,10 +36,10 @@ angular.module('testApp')
                     name: name
                 };
                 
-                rides.$add(data).then(function(ref) {
-                    var id = ref.key();
-                    console.log("Enter");
-        	        $location.path("/status?id="+id);
+                $scope.rides.$add(data).then(function(ref) {
+                    var id = $scope.rides[$scope.rides.length-1].$id;
+                    IDService.setID(id);
+        	        $location.path("/status");
                 });
 
             }

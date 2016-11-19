@@ -70,6 +70,22 @@ angular
       isLoggedIn: isLoggedIn,
       logIn: logIn
     };
+  })
+  .service('IDService', function(){
+    var id = '';
+
+    function getID(){
+      return id;
+    }
+
+    function setID(id2){
+      id = id2;
+    }
+
+    return {
+      getID: getID,
+      setID: setID
+    };
   });
 
 var config = {
