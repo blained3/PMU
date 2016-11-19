@@ -8,7 +8,20 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('InfoCtrl', function ($scope) {
+  .controller('InfoCtrl', function ($scope, $firebaseArray, $window) {
+        var config = {
+            apiKey: "AIzaSyASk9sXM9NW_lNAd_0-rvI13j6OEjU7IGw",
+            //authDomain: "projectId.firebaseapp.com",
+            databaseURL: "https://newlegogroup.firebaseio.com/"
+        };
+        firebase.initializeApp(config);
+        var rootRef = firebase.database().ref();
+        var userRef = rootRef.child('testUser');
+        //Eventually, we will want to use whichever activue user it is
+
+        // download the data into a local object
+        var rides = $firebaseArray(userRef);
+
 		var latLng = new google.maps.LatLng(40.23, -111.65);
 
 		var mapOptions = {
@@ -17,6 +30,18 @@ angular.module('testApp')
 			mapTypeId: google.maps.MapTypeId.ROADMAP
 		};
 
+        $scope.saveRide = function(start, end, time, payment) {
+            rides.push({
+                start: start,
+                end: end,
+                time: time,
+                pay: payment
+            });
+
+            $window.location = '#/status';
+        };
+
+        // Google Map Stuff
 		this.map = new google.maps.Map(document.getElementById("map"), mapOptions);
     // Place a draggable marker on the map
     this.markerStart = new google.maps.Marker({
