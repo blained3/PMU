@@ -131,6 +131,10 @@ body
   height: 400px;
 }
 
+input {
+  color: black;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
   .container {

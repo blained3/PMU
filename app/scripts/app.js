@@ -50,6 +50,7 @@ angular
       });
   })
   .controller('TopCtrl', function ($location, $scope) {
+
     $scope.isActive = function(route) {
         return route === $location.path();
     };
@@ -70,3 +71,10 @@ angular
       logIn: logIn
     };
   });
+
+var config = {
+    apiKey: "AIzaSyASk9sXM9NW_lNAd_0-rvI13j6OEjU7IGw",
+    //authDomain: "projectId.firebaseapp.com",
+    databaseURL: "https://newlegogroup.firebaseio.com/"
+};
+firebase.initializeApp(config);

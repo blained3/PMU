@@ -8833,15 +8833,20 @@ body {
   height: 400px;
 }
 
+/* line 134, ../../app/styles/main.scss */
+input {
+  color: black;
+}
+
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 136, ../../app/styles/main.scss */
+  /* line 140, ../../app/styles/main.scss */
   .container {
     max-width: 730px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 141, ../../app/styles/main.scss */
+  /* line 145, ../../app/styles/main.scss */
   .header,
   .footer {
     padding-left: 0;
@@ -8849,13 +8854,13 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 147, ../../app/styles/main.scss */
+  /* line 151, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 151, ../../app/styles/main.scss */
+  /* line 155, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
