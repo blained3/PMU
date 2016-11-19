@@ -8700,7 +8700,7 @@ button.close {
     display: none !important;
   }
 }
-/* line 11, ../../app/styles/main.scss */
+/* line 14, ../../app/styles/main.scss */
 .logo {
   position: relative;
   float: left;
@@ -8709,43 +8709,54 @@ button.close {
   margin-bottom: 8px;
 }
 
-/* line 23, ../../app/styles/main.scss */
-.ng-scope {
-  background-color: #2D3D52;
+/* line 26, ../../app/styles/main.scss */
+.info-window {
   color: #64FFC5;
 }
 
-/* line 28, ../../app/styles/main.scss */
+/* line 29, ../../app/styles/main.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-/* line 31, ../../app/styles/main.scss */
+/* line 32, ../../app/styles/main.scss */
 .navbar {
   background-color: #6B98D5;
   margin-bottom: 10px;
   border: 0;
 }
 
-/* line 37, ../../app/styles/main.scss */
+/* line 38, ../../app/styles/main.scss */
 .navbar-default .navbar-collapse {
   border-color: #ffffff;
 }
 
-/* line 41, ../../app/styles/main.scss */
+/* line 42, ../../app/styles/main.scss */
 .icon-bar {
   background-color: #fff;
 }
 
-/* line 45, ../../app/styles/main.scss */
+/* line 51, ../../app/styles/main.scss */
+.ng-scope {
+  background-color: #2D3D52;
+  color: White;
+}
+
+/* line 57, ../../app/styles/main.scss */
+.form-box {
+  background-color: Grey;
+  border-width: 0px;
+}
+
+/* line 63, ../../app/styles/main.scss */
 .lead {
-  color: white;
+  color: White;
   font-size: 10px;
   font-family: "Myriad Pro", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
   letter-spacing: -1px;
 }
 
-/* line 54, ../../app/styles/main.scss */
+/* line 71, ../../app/styles/main.scss */
 .btn-success {
   background-color: #FF4847;
   border-color: #700301;
@@ -8753,7 +8764,13 @@ button.close {
   /*top internal highlight*/
 }
 
-/* line 62, ../../app/styles/main.scss */
+/* line 78, ../../app/styles/main.scss */
+.form-wrapper {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 84, ../../app/styles/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -8761,13 +8778,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 69, ../../app/styles/main.scss */
+/* line 91, ../../app/styles/main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 75, ../../app/styles/main.scss */
+/* line 98, ../../app/styles/main.scss */
 .header,
 .footer {
   padding-left: 15px;
@@ -8776,13 +8793,13 @@ body {
 }
 
 /* Custom page header */
-/* line 83, ../../app/styles/main.scss */
+/* line 106, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #ccc;
   margin-bottom: 0px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 89, ../../app/styles/main.scss */
+/* line 112, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8791,7 +8808,7 @@ body {
 }
 
 /* Custom page footer */
-/* line 98, ../../app/styles/main.scss */
+/* line 121, ../../app/styles/main.scss */
 .footer {
   position: fixed;
   width: 100%;
@@ -8799,54 +8816,50 @@ body {
   height: 40px;
 }
 
-/* line 105, ../../app/styles/main.scss */
+/* line 128, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 110, ../../app/styles/main.scss */
+/* line 133, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   background-color: transparent;
 }
-/* line 114, ../../app/styles/main.scss */
+/* line 137, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
-/* line 120, ../../app/styles/main.scss */
+/* line 143, ../../app/styles/main.scss */
 .title-button {
   border-radius: 8px;
 }
 
-/* line 124, ../../app/styles/main.scss */
+/* line 147, ../../app/styles/main.scss */
 #map {
   width: 100%;
   height: 400px;
   background-color: grey;
 }
 
-/* line 130, ../../app/styles/main.scss */
+/* line 153, ../../app/styles/main.scss */
 .angular-google-map-container {
   height: 400px;
 }
 
-/* line 134, ../../app/styles/main.scss */
-input {
-  color: black;
-}
-
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 140, ../../app/styles/main.scss */
+  /* line 159, ../../app/styles/main.scss */
   .container {
     max-width: 730px;
+    bottom-padding: 200px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 145, ../../app/styles/main.scss */
+  /* line 165, ../../app/styles/main.scss */
   .header,
   .footer {
     padding-left: 0;
@@ -8854,16 +8867,20 @@ input {
   }
 
   /* Space out the masthead */
-  /* line 151, ../../app/styles/main.scss */
+  /* line 171, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 155, ../../app/styles/main.scss */
+  /* line 175, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
+}
+/* line 181, ../../app/styles/main.scss */
+.breathing-room {
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=main.css.map */

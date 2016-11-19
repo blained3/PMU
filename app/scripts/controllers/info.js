@@ -70,11 +70,11 @@ angular.module('testApp')
     });
 
     var infowindow = new google.maps.InfoWindow({
-      content: 'Start!'
+      content: '<span class="info-window">Start</span>'
     });
 
     var infowindow2 = new google.maps.InfoWindow({
-      content: 'End!'
+      content: '<span class="info-window">End</span>'
     });
 
     infowindow.open(this.map, this.markerStart);
