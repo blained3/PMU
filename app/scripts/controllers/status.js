@@ -8,6 +8,7 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('StatusCtrl', function () {
-    
+  .controller('StatusCtrl', function ($location) {
+    var id = $location.search();
+    console.log(id);
   });

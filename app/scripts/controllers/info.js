@@ -8,11 +8,11 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('InfoCtrl', function ($scope, $firebaseArray, $window) {
+  .controller('InfoCtrl', function ($scope, $firebaseArray, $location) {
         var rootRef = firebase.database().ref();
         var userRef = rootRef.child('testUser');
         //Eventually, we will want to use whichever activue user it is
-
+        
         // download the data into a local object
         var rides = $firebaseArray(userRef);
 
@@ -35,9 +35,13 @@ angular.module('testApp')
                     pay: payment,
                     name: name
                 };
-                rides.$add(data);
+                
+                rides.$add(data).then(function(ref) {
+                    var id = ref.key();
+                    console.log("Enter");
+        	        $location.path("/status?id="+id);
+                });
 
-                $window.location = '#/status';
             }
         };
 
