@@ -3,10 +3,10 @@
     <button class="btn btn-lg btn-success">Add Funds</button>
     <h1>Rides</h1>
     <div class="container-fluid">
-        <div class="row" ng-click= "goToStatusPage()">
+        <div ng-repeat="ride in futureRides()" class="row" ng-click= "goToStatusPage(ride)">
             <button class="btn btn-xs btn-success col-xs-1">X</button>
-            <p class="col-xs-6">Going To Costco</p>
-            <p class="col-xs-5">Cost per mile: $1.25</p>
+            <p class="col-xs-6">{{ride.name}}</p>
+            <p class="col-xs-5">Cost: ${{ride.pay}}</p>
         </div>
     </div>
 </div>
