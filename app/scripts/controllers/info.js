@@ -16,12 +16,18 @@ angular.module('testApp')
         // download the data into a local object
         $scope.rides = $firebaseArray(userRef);
 
-        //Currently, this does not require a ride name, though I allow users to put one in.
         $scope.saveRide = function(start, end, time, payment, name) {
             if (!(start && end && time && payment && name)) {
                 return;
             }
             else {
+                var now = new Date(Date.now());
+
+                //Set the date, since the input only takes in time.
+                time.setFullYear(now.getFullYear());
+                time.setMonth(now.getMonth());
+                time.setDate(now.getDate());
+
                 var data = {
                     start: {
                         lat: start.lat(),
