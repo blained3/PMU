@@ -16,6 +16,7 @@ angular
     'ngRoute',
     'ngSanitize',
     'ngTouch',
+    'firebase',
   ])
   .config(function ($routeProvider) {
     $routeProvider
@@ -49,6 +50,7 @@ angular
       });
   })
   .controller('TopCtrl', function ($location, $scope) {
+
     $scope.isActive = function(route) {
         return route === $location.path();
     };
@@ -68,4 +70,27 @@ angular
       isLoggedIn: isLoggedIn,
       logIn: logIn
     };
+  })
+  .service('IDService', function(){
+    var id = '';
+
+    function getID(){
+      return id;
+    }
+
+    function setID(id2){
+      id = id2;
+    }
+
+    return {
+      getID: getID,
+      setID: setID
+    };
   });
+
+var config = {
+    apiKey: "AIzaSyASk9sXM9NW_lNAd_0-rvI13j6OEjU7IGw",
+    //authDomain: "projectId.firebaseapp.com",
+    databaseURL: "https://newlegogroup.firebaseio.com/"
+};
+firebase.initializeApp(config);

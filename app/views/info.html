@@ -2,12 +2,14 @@
 <form>
     <div id="map" data-tap-disabled="true"></div>
     	<div class= form-wrapper>
-   		<label>Time: <input class = "form-box" type="time" /></label>
+        <label>Ride Name: <input class="form-box" type="text" ng-model="name" /></label>
    		<br></br>
-    	<label>Willing to Pay: $ <input class = "form-box" type="number" /></label>
+   		<label>Time: <input class = "form-box" type="time" ng-model="time" /></label>
+   		<br></br>
+    	<label>Willing to Pay: $ <input class = "form-box" type="number" ng-model="pay" /></label>
     	</div>
 </form>
 
-<p><a class="btn btn-lg btn-success" ng-href="#/status">Get A Ride!</a></p>
+<p><a class="btn btn-lg btn-success" ng-click="saveRide(start,end,time,pay,name)">Get A Ride!</a></p>
 <div class= "breathing-room">
 </div>
