@@ -8711,44 +8711,45 @@ button.close {
 
 /* line 26, ../../app/styles/main.scss */
 .info-window {
-  color: #64FFC5;
+  color: #2D3D52;
+  font-weight: bold;
 }
 
-/* line 29, ../../app/styles/main.scss */
+/* line 30, ../../app/styles/main.scss */
 .navbar-default .navbar-toggle .icon-bar {
   background-color: white;
 }
 
-/* line 32, ../../app/styles/main.scss */
+/* line 33, ../../app/styles/main.scss */
 .navbar {
   background-color: #6B98D5;
   margin-bottom: 10px;
   border: 0;
 }
 
-/* line 38, ../../app/styles/main.scss */
+/* line 39, ../../app/styles/main.scss */
 .navbar-default .navbar-collapse {
   border-color: #ffffff;
 }
 
-/* line 42, ../../app/styles/main.scss */
+/* line 43, ../../app/styles/main.scss */
 .icon-bar {
   background-color: #fff;
 }
 
-/* line 51, ../../app/styles/main.scss */
+/* line 52, ../../app/styles/main.scss */
 .ng-scope {
   background-color: #2D3D52;
   color: White;
 }
 
-/* line 57, ../../app/styles/main.scss */
+/* line 58, ../../app/styles/main.scss */
 .form-box {
   background-color: Grey;
   border-width: 0px;
 }
 
-/* line 63, ../../app/styles/main.scss */
+/* line 64, ../../app/styles/main.scss */
 .lead {
   color: White;
   font-size: 10px;
@@ -8756,7 +8757,7 @@ button.close {
   letter-spacing: -1px;
 }
 
-/* line 71, ../../app/styles/main.scss */
+/* line 72, ../../app/styles/main.scss */
 .btn-success {
   background-color: #FF4847;
   border-color: #700301;
@@ -8764,13 +8765,13 @@ button.close {
   /*top internal highlight*/
 }
 
-/* line 78, ../../app/styles/main.scss */
+/* line 79, ../../app/styles/main.scss */
 .form-wrapper {
   padding-top: 15px;
   padding-bottom: 15px;
 }
 
-/* line 84, ../../app/styles/main.scss */
+/* line 85, ../../app/styles/main.scss */
 .browsehappy {
   margin: 0.2em 0;
   background: #ccc;
@@ -8778,13 +8779,13 @@ button.close {
   padding: 0.2em 0;
 }
 
-/* line 91, ../../app/styles/main.scss */
+/* line 92, ../../app/styles/main.scss */
 body {
   padding: 0;
 }
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
-/* line 98, ../../app/styles/main.scss */
+/* line 99, ../../app/styles/main.scss */
 .header,
 .footer {
   padding-left: 15px;
@@ -8793,13 +8794,13 @@ body {
 }
 
 /* Custom page header */
-/* line 106, ../../app/styles/main.scss */
+/* line 107, ../../app/styles/main.scss */
 .header {
   border-bottom: 1px solid #ccc;
   margin-bottom: 0px;
   /* Make the masthead heading the same height as the navigation */
 }
-/* line 112, ../../app/styles/main.scss */
+/* line 113, ../../app/styles/main.scss */
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
@@ -8808,7 +8809,7 @@ body {
 }
 
 /* Custom page footer */
-/* line 121, ../../app/styles/main.scss */
+/* line 122, ../../app/styles/main.scss */
 .footer {
   position: fixed;
   width: 100%;
@@ -8816,50 +8817,50 @@ body {
   height: 40px;
 }
 
-/* line 128, ../../app/styles/main.scss */
+/* line 129, ../../app/styles/main.scss */
 .container-narrow > hr {
   margin: 30px 0;
 }
 
 /* Main marketing message and sign up button */
-/* line 133, ../../app/styles/main.scss */
+/* line 134, ../../app/styles/main.scss */
 .jumbotron {
   text-align: center;
   background-color: transparent;
 }
-/* line 137, ../../app/styles/main.scss */
+/* line 138, ../../app/styles/main.scss */
 .jumbotron .btn {
   font-size: 21px;
   padding: 14px 24px;
 }
 
-/* line 143, ../../app/styles/main.scss */
+/* line 144, ../../app/styles/main.scss */
 .title-button {
   border-radius: 8px;
 }
 
-/* line 147, ../../app/styles/main.scss */
+/* line 148, ../../app/styles/main.scss */
 #map {
   width: 100%;
   height: 375px;
   background-color: grey;
 }
 
-/* line 153, ../../app/styles/main.scss */
+/* line 154, ../../app/styles/main.scss */
 .angular-google-map-container {
   height: 400px;
 }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
-  /* line 159, ../../app/styles/main.scss */
+  /* line 160, ../../app/styles/main.scss */
   .container {
     max-width: 730px;
     bottom-padding: 200px;
   }
 
   /* Remove the padding we set earlier */
-  /* line 165, ../../app/styles/main.scss */
+  /* line 166, ../../app/styles/main.scss */
   .header,
   .footer {
     padding-left: 0;
@@ -8867,18 +8868,20 @@ body {
   }
 
   /* Space out the masthead */
-  /* line 171, ../../app/styles/main.scss */
+  /* line 172, ../../app/styles/main.scss */
   .header {
     margin-bottom: 30px;
   }
 
   /* Remove the bottom border on the jumbotron for visual effect */
-  /* line 175, ../../app/styles/main.scss */
+  /* line 176, ../../app/styles/main.scss */
   .jumbotron {
     border-bottom: 0;
   }
 }
-/* line 181, ../../app/styles/main.scss */
+/* line 182, ../../app/styles/main.scss */
 .breathing-room {
   padding-bottom: 40px;
 }
+
+/*# sourceMappingURL=main.css.map */
