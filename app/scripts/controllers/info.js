@@ -21,6 +21,16 @@ angular.module('testApp')
                 $scope.time = selectedDate;
             });
         };
+        $scope.pay = 0;
+        $scope.wait = 180;
+
+        $scope.payMove = function(){
+            $scope.wait = 180 - $scope.pay;
+        };
+
+        $scope.waitMove = function(){
+            $scope.pay = 180 - $scope.wait;
+        };
         
         // download the data into a local object
         $scope.rides = $firebaseArray(userRef);

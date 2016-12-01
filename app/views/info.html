@@ -8,7 +8,19 @@
 				<mdp-time-picker class="form-box" ng-model="time"></mdp-time-picker>
 			</label>
 			<br></br>
-			<label>Willing to Pay: $ <input class = "form-box" type="number" ng-model="pay" /></label>
+
+    <md-slider-container>
+			<label>Pay($):<input min="0" max="180" class = "form-box" type="number" ng-model="pay" ng-change="payMove()"/></label>
+      <md-slider flex min="0" max="180" ng-change="payMove()" ng-model="pay">
+      </md-slider>
+    </md-slider-container>
+
+    <md-slider-container>
+			<label>Wait Time(min):<input min="0" max="180" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/></label>
+      <md-slider flex min="0" max="180" ng-change="waitMove()" ng-model="wait">
+      </md-slider>
+    </md-slider-container>
+
     	</div>
 </form>
 
