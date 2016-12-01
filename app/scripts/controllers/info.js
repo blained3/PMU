@@ -67,7 +67,7 @@ angular.module('testApp')
         position: $scope.start,
         map: this.map,
         draggable:true,
-        icon: `http://maps.google.com/mapfiles/ms/icons/green-dot.png`
+        icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
     });
 
     $scope.end = new google.maps.LatLng(40.24, -111.64),
@@ -76,7 +76,7 @@ angular.module('testApp')
         position: $scope.end,
         map: this.map,
         draggable:true,
-        icon: `http://maps.google.com/mapfiles/ms/icons/red-dot.png`
+        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
     });
 
     var infowindow = new google.maps.InfoWindow({
