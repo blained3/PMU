@@ -32,6 +32,10 @@ angular.module('testApp')
             loaded = true;
         });
 
+        $scope.delete = function(ride) {
+            $scope.rides.$remove(ride);
+        };
+
         $scope.futureRides = function() {
             var upcoming = [];
 

@@ -11,6 +11,10 @@ $buttonBorder: #700301;
 
 ////////// HEADER STUFF //////////
 
+body {
+  color: #ffffff;
+}
+
 .logo
 {
   position: relative;
@@ -199,8 +203,20 @@ body
   padding-bottom:40px;
 }
 
+md-icon.md-default-theme, md-icon {
+  background-color: gray !important;
+  color: white;
+}
 
+mdp-time-picker .md-button.md-icon-button {
+  margin: 0;
+}
 
+md-input-container {
+  margin: 0;
+}
 
-
+md-input-container input {
+  color: white !important;
+}
 
