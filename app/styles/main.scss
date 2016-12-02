@@ -24,7 +24,8 @@ $buttonBorder: #700301;
   
 }
 .info-window{
-  color: $mainColor;
+  color: $darkerColor;
+  font-weight: bold;
 }
 .navbar-default .navbar-toggle .icon-bar {
     background-color: white;

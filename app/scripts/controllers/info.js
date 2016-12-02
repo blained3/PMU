@@ -8,10 +8,29 @@
  * Controller of the testApp
  */
 angular.module('testApp')
-  .controller('InfoCtrl', function ($scope, $firebaseArray, $location, IDService) {
+  .controller('InfoCtrl', function ($scope, $firebaseArray, $location, IDService, $mdpTimePicker) {
         var rootRef = firebase.database().ref();
         var userRef = rootRef.child('testUser');
         //Eventually, we will want to use whichever activue user it is
+        $scope.name = 'To School';
+        $scope.time = new Date();
+        this.showTimePicker = function(ev) {
+            $mdpTimePicker($scope.time, {
+                targetEvent: ev
+            }).then(function(selectedDate) {
+                $scope.time = selectedDate;
+            });
+        };
+        $scope.pay = 0;
+        $scope.wait = 180;
+
+        $scope.payMove = function(){
+            $scope.wait = 180 - $scope.pay;
+        };
+
+        $scope.waitMove = function(){
+            $scope.pay = 180 - $scope.wait;
+        };
         
         // download the data into a local object
         $scope.rides = $firebaseArray(userRef);
@@ -52,7 +71,7 @@ angular.module('testApp')
         };
 
         // Google Map Stuff
-		var latLng = new google.maps.LatLng(40.23, -111.65);
+		var latLng = new google.maps.LatLng(40.243890537242656, -111.65909805297849);
         $scope.start = latLng;
 
 		var mapOptions = {
@@ -67,16 +86,16 @@ angular.module('testApp')
         position: $scope.start,
         map: this.map,
         draggable:true,
-        icon: `http://maps.google.com/mapfiles/ms/icons/green-dot.png`
+        icon: 'http://maps.google.com/mapfiles/ms/icons/green-dot.png'
     });
 
-    $scope.end = new google.maps.LatLng(40.24, -111.64),
+    $scope.end = new google.maps.LatLng(40.25192330715254, -111.64926971435546),
 
     this.markerEnd = new google.maps.Marker({
         position: $scope.end,
         map: this.map,
         draggable:true,
-        icon: `http://maps.google.com/mapfiles/ms/icons/red-dot.png`
+        icon: 'http://maps.google.com/mapfiles/ms/icons/red-dot.png'
     });
 
     var infowindow = new google.maps.InfoWindow({
