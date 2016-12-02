@@ -19,22 +19,23 @@ $buttonBorder: #700301;
   margin-top: 8px;
   margin-bottom: 8px;
 }
-.logo:hover
+.homeImage:active
 {
-  
+  image: url('images/home_pressed.png');
 }
-.info-window{
+.info-window
+{
   color: $darkerColor;
   font-weight: bold;
-}
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+
 }
 .navbar
 {
+
   background-color:$lighterColor;
   margin-bottom: 10px;
   border:0;
+  box-shadow: 0px 4px 0px rgba(0,0,0,0.3);
 }
 .navbar-default .navbar-collapse,
 {
@@ -42,18 +43,32 @@ $buttonBorder: #700301;
 }
 .icon-bar 
 {
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
-
+.navbar-default .navbar-toggle
+{
+  background-color: rgba(178,34,34,1);
+  border-color: #800000;
+}
+.navbar-default .navbar-toggle:focus
+{
+  background-color: rgba(178,34,34,0.5);
+}
+.navbar-default .navbar-toggle:focus .icon-bar
+{
+  background-color: grey;
+}
+.navbar-default .navbar-toggle .icon-bar
+{
+  background-color: white;
+}
 ////////////////////////////////// Main Body Stuff //////////////
 
 
 .ng-scope
 {
   background-color:$darkerColor; 
-  color: White;
-
 }
 .form-box
 {
@@ -82,7 +97,8 @@ $buttonBorder: #700301;
  padding-bottom:15px;
 }
 
-.browsehappy {
+.browsehappy 
+{
   margin: 0.2em 0;
   background: #ccc;
   color: #000;
@@ -93,7 +109,6 @@ body
 {
   padding: 0;
 }
-
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -183,6 +198,8 @@ body
 {
   padding-bottom:40px;
 }
+
+
 
 
 
