@@ -9,14 +9,14 @@
 			<br></br>
 
     <md-slider-container>
-			<label>Pay($): <input min="0" max="180" class = "form-box" type="number" ng-model="pay" ng-change="payMove()"/></label>
-      <md-slider flex min="0" max="180" ng-change="payMove()" ng-model="pay">
+			<label>Pay($): <input min="0" max="180" class = "form-box" type="number"  ng-model="pay" ng-change="payMove()"/></label>
+      <md-slider flex min="0" max="180" id = "slider" ng-change="payMove()"  ng-model="pay">
       </md-slider>
     </md-slider-container>
 
     <md-slider-container>
 			<label>Wait Time(min): <input min="0" max="180" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/></label>
-      <md-slider flex min="0" max="180" ng-change="waitMove()" ng-model="wait">
+      <md-slider flex min="0" max="180" id = "slider"  ng-change="waitMove()" ng-model="wait">
       </md-slider>
     </md-slider-container>
 
