@@ -6,12 +6,12 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 $mainColor: #64FFC5;
 $darkerColor: #2D3D52;
 $lighterColor: #6B98D5;
-$buttonColor: #FF4847;
+$buttonColor: rgba(251,44,42,1);
 $buttonPressed: #c63837;
 $buttonBorder: #700301;
-$redOpaque: rgba(255,100,100,.3);
+$redOpaque: rgba(110,152,213,.5);
 $letterColor: white;
-$darkBorder: #800000;
+$darkBorder: rgba(29,50,79,1);
 
 ////////////////////////////////// HEADER STUFF //////////////////////////////////
 
@@ -39,16 +39,13 @@ body {
 }
 .navbar
 {
-
+  vertical-align:middle;
   background-color:$lighterColor;
   margin-bottom: 10px;
   border:0;
   box-shadow: 0px 4px 0px rgba(0,0,0,0.3);
 }
-.navbar-default .navbar-collapse,
-{
- border-color: #ffffff;
-}
+
 .icon-bar 
 {
   background-color: #ffffff;
@@ -56,14 +53,20 @@ body {
 
 .navbar-default .navbar-toggle
 {
-  background-color: rgba(178,34,34,1);
-  border-color: #800000;
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+  background-color: rgba(230,40,40,1);
+  border-color: #800000
 }
-.navbar-default .navbar-toggle:focus
+.navbar-default .navbar-toggle:hover
 {
-  background-color: rgba(178,34,34,0.5);
+  background-color: rgba(230,34,34,0.5);
+  box-shadow: inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+  inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
 }
-.navbar-default .navbar-toggle:focus .icon-bar
+
+
+.navbar-default .navbar-toggle:hover .icon-bar
 {
   background-color: grey;
 }
@@ -278,6 +281,17 @@ md-input-container input {
 
 
 
+////////////////////////////////////////////  SLIDERS   ///////////////////////////////////////////
+
+#slider .md-thumb:after, #slider .md-track-fill
+{
+    background-color: #BFEFFF !important;
+    border-color: #BFEFFF !important;
+}
+#slider .md-focus-thumb, #slider .md-focus-ring
+{
+    background-color: #BFEFFF;
+}
 
 
 
