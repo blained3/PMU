@@ -4,19 +4,18 @@
     	<div class= form-wrapper>
 			<label>Ride Name: <input class="form-box" type="text" ng-model="name" /></label>
 			<br></br>
-			<label layout="row">Time: 
-				<mdp-time-picker class="form-box" ng-model="time"></mdp-time-picker>
+			<label layout="row">Time:&nbsp<mdp-time-picker class="form-box" ng-model="time"></mdp-time-picker>
 			</label>
 			<br></br>
 
     <md-slider-container>
-			<label>Pay($):<input min="0" max="180" class = "form-box" type="number" ng-model="pay" ng-change="payMove()"/></label>
+			<label>Pay($): <input min="0" max="180" class = "form-box" type="number" ng-model="pay" ng-change="payMove()"/></label>
       <md-slider flex min="0" max="180" ng-change="payMove()" ng-model="pay">
       </md-slider>
     </md-slider-container>
 
     <md-slider-container>
-			<label>Wait Time(min):<input min="0" max="180" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/></label>
+			<label>Wait Time(min): <input min="0" max="180" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/></label>
       <md-slider flex min="0" max="180" ng-change="waitMove()" ng-model="wait">
       </md-slider>
     </md-slider-container>
@@ -24,6 +23,6 @@
     	</div>
 </form>
 
-<p><a class="btn btn-lg btn-success" ng-click="saveRide(start,end,time,pay,name)">Get A Ride!</a></p>
+<p><a class="pmu-button" ng-click="saveRide(start,end,time,pay,name)">Get A Ride!</a></p>
 <div class= "breathing-room">
 </div>
