@@ -21,8 +21,8 @@ angular.module('testApp')
                 $scope.time = selectedDate;
             });
         };
-        $scope.pay = 0;
-        $scope.wait = 180;
+        $scope.pay = 25;
+        $scope.wait = 155;
 
         $scope.payMove = function(){
             $scope.wait = 180 - $scope.pay;
