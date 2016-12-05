@@ -8961,11 +8961,16 @@ md-input-container input {
 }
 
 /* line 265, ../../app/styles/main.scss */
+input {
+  width: 125px;
+}
+
+/* line 269, ../../app/styles/main.scss */
 .container {
   background-color: #2D3D52;
 }
 
-/* line 273, ../../app/styles/main.scss */
+/* line 277, ../../app/styles/main.scss */
 .form-box {
   padding-left: 4px;
   border-radius: 5px;
@@ -8974,13 +8979,15 @@ md-input-container input {
   border-color: #1d324f;
 }
 
-/* line 286, ../../app/styles/main.scss */
+/* line 290, ../../app/styles/main.scss */
 #slider .md-thumb:after, #slider .md-track-fill {
   background-color: #BFEFFF !important;
   border-color: #BFEFFF !important;
 }
 
-/* line 291, ../../app/styles/main.scss */
+/* line 295, ../../app/styles/main.scss */
 #slider .md-focus-thumb, #slider .md-focus-ring {
   background-color: #BFEFFF;
 }
+
+/*# sourceMappingURL=main.css.map */

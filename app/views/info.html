@@ -1,24 +1,29 @@
 
 <form>
     <div id="map" data-tap-disabled="true"></div>
-    	<div class= form-wrapper>
-			<label>Ride Name: <input class="form-box" type="text" ng-model="name" /></label>
-			<br></br>
-			<label layout="row">Time:&nbsp<mdp-time-picker class="form-box" ng-model="time"></mdp-time-picker>
-			</label>
-			<br></br>
+    <div class="form-wrapper">
+      <div layout="row" layout-align="center center">
+        <label flex="50">Ride Name: </label><input class="form-box" type="text" ng-model="name" />
+      </div>
+      <div layout="row" layout-align="center center">
+        <label flex="50">Time: </label><mdp-time-picker ng-model="time"></mdp-time-picker>
+      </div>
 
-    <md-slider-container>
-			<label>Pay($): <input min="1" max="180" class = "form-box" type="number"  ng-model="pay" ng-change="payMove()"/></label>
-      <md-slider flex min="1" max="180" id = "slider" ng-change="payMove()"  ng-model="pay">
-      </md-slider>
-    </md-slider-container>
+        <md-slider-container>
+        <div layout="row" layout-align="center center">
+          <label flex="50">Pay ($): </label><input min="0" max="60" class = "form-box" type="number"  ng-model="pay" ng-change="payMove()"/>
+        </div>
+          <md-slider flex min="0" max="60" id = "slider" ng-change="payMove()"  ng-model="pay">
+          </md-slider>
+        </md-slider-container>
 
-    <md-slider-container>
-			<label>Wait Time(min): <input min="1" max="180" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/></label>
-      <md-slider flex min="1" max="180" id = "slider"  ng-change="waitMove()" ng-model="wait">
-      </md-slider>
-    </md-slider-container>
+        <md-slider-container>
+        <div layout="row" layout-align="center center">
+          <label flex="50">Wait Time (min): </label><input min="5" max="65" class = "form-box" type="number" ng-model="wait" ng-change="waitMove()"/>
+        </div>
+          <md-slider flex min="5" max="65" id = "slider"  ng-change="waitMove()" ng-model="wait">
+          </md-slider>
+        </md-slider-container>
 
     	</div>
 </form>

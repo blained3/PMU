@@ -22,21 +22,21 @@ angular.module('testApp')
             });
         };
         $scope.pay = 25;
-        $scope.wait = 155;
+        $scope.wait = 40;
 
         $scope.payMove = function(){
-            $scope.wait = 180 - $scope.pay;
+            $scope.wait = 65 - $scope.pay;
         };
 
         $scope.waitMove = function(){
-            $scope.pay = 180 - $scope.wait;
+            $scope.pay = 65 - $scope.wait;
         };
         
         // download the data into a local object
         $scope.rides = $firebaseArray(userRef);
 
         $scope.saveRide = function(start, end, time, payment, name) {
-            if (!(start && end && time && payment && name)) {
+            if (!(start && end && name)) {
                 return;
             }
             else {
